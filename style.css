@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 0; /* To remove default margin which is 10px */
+  padding: 0; /* To remove default padding */
+  min-height: calc(100vh - 5rem);
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='70' height='70' viewBox='0 0 70 70' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.08' fill-rule='evenodd'%3E%3Cpath d='M0 0h35v35H0V0zm5 5h25v25H5V5zm5 5h15v15H10V10zm5 5h5v5h-5v-5zM40 5h25v25H40V5zm5 5h15v15H45V10zm5 5h5v5h-5v-5zM70 35H35v35h35V35zm-5 5H40v25h25V40zm-5 5H45v15h15V45zm-5 5h-5v5h5v-5zM30 40H5v25h25V40zm-5 5H10v15h15V45zm-5 5h-5v5h5v-5z'/%3E%3C/g%3E%3C/svg%3E");
+  color: #404040;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  align-items: center; /* Vertical alignment */
+  justify-content: center; /* Horizontal alignment */
+}
+
+.quote-container {
+  width: auto;
+  max-width: 900px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.644);
+  box-shadow: 0 8px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.quote-text {
+  font-size: 2.75rem;
+}
+
+.quote-text span::selection {
+  color: white;
+  background: coral;
+}
+
+.long-quote {
+  font-size: 2rem;
+}
+
+.fa-quote-left {
+  font-size: 4rem;
+}
+
+.quote-author {
+  margin-top: 15px;
+  font-size: 1.75rem;
+  font-weight: 300;
+  font-style: italic;
+  color: rgb(133, 133, 133);
+}
+
+.quote-author span::selection {
+  color: white;
+  background: skyblue;
+}
+
+.button-container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  user-select: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: #333;
+  outline: none;
+  padding: 0.5rem 1.8rem;
+  box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+}
+
+button:hover {
+  filter: brightness(110%);
+}
+
+button:active {
+  transform: translate(0, 0.3rem);
+  box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+.twitter-button:hover {
+  color: #38a1f3;
+}
+
+footer {
+  width: 100%;
+  height: rem;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  display: block;
+  position: relative;
+  padding: 0rem;
+  font-size: 0.8rem;
+}
+
+footer span {
+  color: rgb(250, 77, 77);
+}
+
+/* Media Query */
+@media only screen and (max-width: 1000px) {
+  .quote-container {
+    margin: auto 1rem;
+  }
+
+  .quote-text {
+    font-size: 2.25rem;
+  }
+}
